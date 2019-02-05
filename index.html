@@ -17,12 +17,9 @@
             background-color: #EAEDED;
         }
 
-        .top-left,
-        .top-right,
-        .top-middle {
-            height: 100%;
+        a {
+            text-decoration-style: none;
         }
-
         .header-container {
             background-color: black;
             height: 90px;
@@ -46,7 +43,13 @@
         }
 
         .top-left>img, .top-right>img{
-            height: 60 px;
+            height: 60px;
+        }
+        
+        .top-left,
+        .top-right,
+        .top-middle {
+            height: 100%;
         }
         .top-middle {
             width: calc(100% - 330px);
@@ -60,21 +63,25 @@
         
         .top-nav-items {
             text-align: left;
-            margin-top: 18px;
+            margin-top: 15px;
             margin-left: 32px;
         }
         .top-nav-items > li {
             display: inline-block;
+            margin-right: 5px;
         }
 
         .top-nav-items > li > a {
             font-size: 8px;
             text-decoration: none;
             color: #ffffff;
+            padding: 4px;
+            display: block;
         }
 
         .top-nav-items >li:hover {
             border: 1px sold #fff;
+            border-radius: 5px;
             
         }
         .top-search-button {
@@ -88,16 +95,65 @@
             overflow: hidden;
         }
         .topright>img {
-            background-position: 30
+            background-position: 30px 0;
         }
 
         .main-body {
-            width: 90vw;
+            width: 80vw;
             background-color: brown;
             min-height: 800px;
             margin: 0px auto;
         }
 
+       .main-top-container>img {
+           max-width:100%;
+       }
+
+       .main-top-items > li {
+           display: inline-block;
+           background-color: #FFF;
+           width: 200px;
+           padding: 10px;
+           min-width: 25%;
+            text-align: center;
+       }
+       .main-top-items>li:last-child {
+           background-color:transparent !important;
+       }
+
+       .btn-sign-in {
+           background-color: #f0c14b;
+           border-radius: 1px;
+           border-color: #a88734 #9c7e31 #846a29;
+            color: #111;
+            font-size: 8px;
+            padding: 8px 20px;
+            width: 100%;
+       }
+       .last-container {
+           background-color: white;
+       }
+       .main-top-items > li > img, .main-bottom-container >li >img {
+           max-width: 100%;
+       }
+       .main-top-items > li > h2 {
+           font-size: 12px;
+           margin-bottom:7px;
+       }
+
+       .main-top-items > li, .main-top-items > li > a {
+           font-size: 7px;
+       }
+
+       .main-bottom-container {
+           list-style-type: none;
+       }
+       .main-bottom-container > li {
+           width: 100%;
+           background-color: white;
+           margin: 10px 0px;
+           padding: 10px;
+       }
         .footer-sidebar-container {
             width: 100vw;
             min-height: 500px;
@@ -108,9 +164,7 @@
 
 <body>
     <header class="header-container">
-        <div class="top-bar">
-            Top bar
-        </div>
+        <div class="top-bar"></div>
         <div class="top-nav">
             <div class="top-left">
                 <img src="./img./sm_left.png" alt="top-left">
@@ -119,7 +173,7 @@
             <div class="top-middle">
                 <input type="text" class="top-search">
                 <button type="button" class="top-search-button">Search</button>>
-                <ul class=top-nav-items>
+                <ul class="top-nav-items">
                     <li>
                         <a href=#>Your Amazon.com</a>
                     </li>
@@ -143,14 +197,53 @@
                     </li>
                 </ul>
             </div>
-
             <div class="top-right">
                 <img src="./img./sm_right.png" alt="top-right">
             </div>
         </div>
     </header>
     <div class="main-body">
-        Main Body
+        <div class="main-top-container">
+            <img src="./img/bg_cover.jpg" alt="banner">
+            <ul class="main-top-items">
+                <li>
+                    <h2>Find the perfect gift</h2>
+                    <img src=./img/sm_img1.jpg alt="img 1">
+                    <p>Send love, spread love</p>
+                    <a href=#>See all Valentine's Day gifts</a>
+                </li>
+                <li>
+                    <h2>Find the perfect gift</h2>
+                    <img src=./img/sm_img2.jpg alt="img 1">
+                    <p>Send love, spread love</p>
+                    <a href=#>See all Valentine's Day gifts</a>
+                </li>
+                <li>
+                    <h2>Find the perfect gift</h2>
+                    <img src=./img/sm_img3.jpg alt="img 1">
+                    <p>Send love, spread love</p>
+                    <a href=#>See all Valentine's Day gifts</a>
+                </li>
+                <li>
+                    <div class="last-container">
+                        <h2>Find the perfect gift</h2>
+                        <button class="btn-sign-in" type="button">Sign in Security</button>
+                    </div>
+                    <img src=./img/sm_img4.png alt="img 1">
+                </li>
+            </ul>
+        </div>
+        <ul class="main-bottom-container">
+            <li>
+                <img src="./img/bg_banner1.PNG" alt="img 1">
+            </li>
+            <li>
+                <img src="./img/bg_banner2.PNG" alt="img 2">
+            </li>
+            <li>
+                <img src="./img/bg_banner3.PNG" alt="img 3">
+            </li>
+        </ul>
     </div>
     <div class="footer-sidebar-container">
         Footer Side Bar Container
