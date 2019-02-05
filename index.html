@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fake Amazon</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            position: relative;
+        }
+
+        html,
+        body {
+            height: 100vh;
+            width: 100vw;
+            background-color: #EAEDED;
+        }
+
+        .top-left,
+        .top-right,
+        .top-middle {
+            height: 100%;
+        }
+
+        .header-container {
+            background-color: black;
+            height: 90px;
+        }
+
+        .top-bar {
+            background-color: blue;
+            height: 30px;
+            background-image: url('./img/sm_topbar.png');
+            background-size: contain;
+        }
+
+        .top-nav {
+            background-color: #232f3e;
+            height: 60px;
+        }
+
+        .top-left {
+            width: 110px;
+            float: left;
+        }
+
+        .top-left>img, .top-right>img{
+            height: 60 px;
+        }
+        .top-middle {
+            width: calc(100% - 330px);
+            float: left;
+            text-align: center;
+        }
+        .top-search {
+            width: 400px;
+            margin-top: 5px;
+        }
+        
+        .top-nav-items {
+            text-align: left;
+            margin-top: 18px;
+            margin-left: 32px;
+        }
+        .top-nav-items > li {
+            display: inline-block;
+        }
+
+        .top-nav-items > li > a {
+            font-size: 8px;
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        .top-nav-items >li:hover {
+            border: 1px sold #fff;
+            
+        }
+        .top-search-button {
+            background-color: #febd69;
+            border-top-right-radius: 2px;
+            border-bottom-right-radius: 2px;
+        }
+        .top-right {
+            width: 220px;
+            float: right;
+            overflow: hidden;
+        }
+        .topright>img {
+            background-position: 30
+        }
+
+        .main-body {
+            width: 90vw;
+            background-color: brown;
+            min-height: 800px;
+            margin: 0px auto;
+        }
+
+        .footer-sidebar-container {
+            width: 100vw;
+            min-height: 500px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header-container">
+        <div class="top-bar">
+            Top bar
+        </div>
+        <div class="top-nav">
+            <div class="top-left">
+                <img src="./img./sm_left.png" alt="top-left">
+            </div>
+
+            <div class="top-middle">
+                <input type="text" class="top-search">
+                <button type="button" class="top-search-button">Search</button>>
+                <ul class=top-nav-items>
+                    <li>
+                        <a href=#>Your Amazon.com</a>
+                    </li>
+                    <li>
+                        <a href=#>Today's Dealss</a>
+                    </li>
+                    <li>
+                        <a href=#>Gift Cards</a>
+                    </li>
+                    <li>
+                        <a href=#>Whole Foods</a>
+                    </li>
+                    <li>
+                        <a href=#>Registry</a>
+                    </li>
+                    <li>
+                        <a href=#> Sale</a>
+                    </li>
+                    <li>
+                        <a href=#>Help</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="top-right">
+                <img src="./img./sm_right.png" alt="top-right">
+            </div>
+        </div>
+    </header>
+    <div class="main-body">
+        Main Body
+    </div>
+    <div class="footer-sidebar-container">
+        Footer Side Bar Container
+    </div>
+
+</body>
+
+</html>
