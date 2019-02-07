@@ -20,6 +20,20 @@
         a {
             text-decoration: none;
         }
+
+        h3 {
+            color: #fff;
+            font-size: 10px;
+            margin-bottom: 7px;
+            margin-left: 20px;
+        }
+
+        h4 {
+            color: #fff;
+            font-size: 8px;
+            margin-left: 20px;
+        }
+
         .header-container {
             background-color: black;
             height: 90px;
@@ -111,16 +125,16 @@
 
        .main-top-items {
            text-align: center;
-           margin-top: -120px;
+           margin-top: -150px;
        }
 
        .main-top-items > li {
            display: inline-block;
            background-color: #FFF;
-           width: 200px;
+           width: 20%;
            padding: 10px;
-           min-width: 25%;
             text-align: center;
+            /* height:190px; */
        }
        .main-top-items>li:last-child {
            background-color:transparent !important;
@@ -135,13 +149,16 @@
             padding: 8px 20px;
             width: 100%;
        }
-       .last-container {
+       .last-child {
            background-color: white;
+           display: inline-block;
+           padding: 10px;
+           margin-bottom: 22px;
        }
        .main-top-items > li > img, .main-bottom-container >li >img {
            max-width: 100%;
        }
-       .main-top-items > li > h2 {
+       .main-top-items > li > h2 , .main-top-items > li > span > h2 {
            font-size: 12px;
            margin-bottom:7px;
        }
@@ -159,11 +176,111 @@
            margin: 10px 0px;
            padding: 10px;
        }
+       .bg-gradient {
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4e12fe+0,4e12fe+17,9677f5+35,eaeded+73,eaeded+80,eaeded+86,eaeded+97 */
+            background: #4e12fe; /* Old browsers */
+            background: -moz-linear-gradient(top, #4e12fe 0%, #4e12fe 17%, #9677f5 35%, #eaeded 73%, #eaeded 80%, #eaeded 86%, #eaeded 97%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, #4e12fe 0%,#4e12fe 17%,#9677f5 35%,#eaeded 73%,#eaeded 80%,#eaeded 86%,#eaeded 97%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, #4e12fe 0%,#4e12fe 17%,#9677f5 35%,#eaeded 73%,#eaeded 80%,#eaeded 86%,#eaeded 97%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4e12fe', endColorstr='#eaeded',GradientType=0 ); /* IE6-9 */
+        }
+
         .footer-sidebar-container {
             width: 100vw;
             min-height: 500px;
-            background-color: aquamarine;
+            background-color: #232F3E;
         }
+        .footer-top-section {
+            display:block;
+            text-align: center;
+            color: #fff;
+            padding: 15px 0;
+            line-height: 19px;
+            font-size: 10px;
+            margin-bottom: 40px;
+            background-color: #37475A;
+        }
+        .footer-center-section {
+            background-color: #232F3E;
+            width: 100%;
+            display: block;
+            overflow: auto;
+        }
+
+        .pull-left {
+            float: left;
+            width: 25%;
+        }
+        .pull-left > ul {
+            list-style-type: none;
+            margin-left: 20px;
+        }
+
+        .pull-left > ul > li > a {
+            color: #fff;
+            font-size: 8px;
+        }
+        .footer-bottom-container {
+            width: 100%;
+        }
+        .footer-center-squeeze, .footer-bottom-squeeze {
+            width: 80%;
+            margin: 0 auto;
+            overflow: auto;
+        }
+        .footer-center-squeeze-bottom {
+            border-top: 1px solid #3a4553;
+            margin-top: 40px;
+        }
+        
+        .footer-25 {
+            width:25%;
+        }
+        .footer-16 {
+            width: 16%;
+        }
+        .footer-squeeze-button-items {
+            list-style-type: none;
+            text-align: center;
+            margin: 15px auto;
+        }
+
+        .footer-squeeze-button-items > li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .footer-squeeze-button-items > li:first-child {
+            margin-right:20px;
+        }
+
+        .btn-footer{
+            color: #fff;
+            font-size: 10px;
+            background-color: transparent;
+            padding: 3px 9px;
+            border-radius: 3px;
+        }
+
+       .footer-logo {
+            height: 40px;
+            margin-bottom: -10px;
+        }
+
+        .footer-bottom-container {
+           background-color: #131A22;
+           overflow: auto;
+        }
+        
+        .footer-bottom-squeeze {
+            margin: 25px auto;
+        }
+
+        .footer-16 > ul > li > a {
+            font-size: 6px;
+
+        }
+
     </style>
 </head>
 
@@ -210,7 +327,7 @@
     <div class="main-body">
         <div class="main-top-container">
             <img src="./img/bg_cover.jpg" alt="banner">
-            <ul class="main-top-items">
+            <ul class="main-top-items bg-gradient">
                 <li>
                     <h2>Find the perfect gift</h2>
                     <img src=./img/sm_img1.jpg alt="img 1">
@@ -230,10 +347,10 @@
                     <a href=#>See all Valentine's Day gifts</a>
                 </li>
                 <li>
-                    <div class="last-container">
+                    <span class="last-child">
                         <h2>Find the perfect gift</h2>
                         <button class="btn-sign-in" type="button">Sign in Security</button>
-                    </div>
+                    </span>
                     <img src=./img/sm_img4.png alt="img 1">
                 </li>
             </ul>
@@ -251,7 +368,265 @@
         </ul>
     </div>
     <div class="footer-sidebar-container">
-        Footer Side Bar Container
+        <div class="footer-top-section">
+            Back to top
+        </div>
+        <div class="footer-center-section">
+            <div class="footer-center-squeeze">
+                <div class="pull-left footer-25">
+                    <h3>Get to Know Us</h3>
+                    <ul>
+                        <li> <a href="#">Careers</a></li>
+                        <li> <a href="#">Blog</a></li>
+                        <li> <a href="#">About Amazon</a></li>
+                        <li> <a href="#">Press Center</a></li>
+                        <li> <a href="#">Investor Relations</a></li>
+                        <li> <a href="#">Amazon Devices</a></li>
+                    </ul>
+                </div>
+                <div class="pull-left footer-25">
+                    <h3>Make Money with Us</h3>
+                    <ul>
+                        <li> <a href="#">Sell on Amazon</a></li>
+                        <li> <a href="#">Sell Under Private background-position</a></li>
+                        <li> <a href="#">Sell on Amazon Handmade</a></li>
+                        <li> <a href="#">Sell Your Services on Amazon</a></li>
+                        <li> <a href="#">Sell on Amazon Business</a></li>
+                        <li> <a href="#">SEll Your Apps on Amazon</a></li>
+                        <li> <a href="#">Become an Affilate</a></li>
+                        <li> <a href="#">Advertise Your Products</a></li>
+                        <li> <a href="#">Self-Publish with Us</a></li>
+                        <li> <a href="#">See all</a></li>
+                    </ul>
+                </div>
+                <div class="pull-left footer-25">
+                    <h3>Amazon Payment Products</h3>
+                    <ul>
+                        <li> <a href="#">Amazon Rewards Visa Signature Cards</a></li>
+                        <li> <a href="#">Amazon.com Store Card</a></li>
+                        <li> <a href="#">Amazon Business Card</a></li>
+                        <li> <a href="#">Amazon.com Corporate Credit Line</a></li>
+                        <li> <a href="#">Shop with Points</a></li>
+                        <li> <a href="#">Credit Card Marketplace</a></li>
+                        <li> <a href="#">Reload Your Balance</a></li>
+                        <li> <a href="#">Amazon Currency Converter</a></li>
+                    </ul>
+                </div>
+                <div class="pull-left">
+                    <h3>Let Us Help You</h3>
+                    <ul>
+                        <li> <a href="#">Your Account</a></li>
+                        <li> <a href="#">Your Orders</a></li>
+                        <li> <a href="#">Shipping Rates & Policies</a></li>
+                        <li> <a href="#">Amazon Prime</a></li>
+                        <li> <a href="#">Returns & Replacements</a></li>
+                        <li> <a href="#">Manage Your Content and Devices</a></li>
+                        <li> <a href="#">Amazon Assistant</a></li>
+                        <li> <a href="#">Help</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-center-squeeze-bottom">
+                <ul class="footer-squeeze-button-items">
+                    <li>
+                        <img class="footer-logo" src="./img/sm_amazonlogo.PNG" alt="amazon logo">
+                    </li>
+                    <li>
+                        <button type="button" class="btn-footer">English</button>
+                    </li>
+                    <li>
+                        <button type="button" class="btn-footer">United States</button>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom-container">
+        <div class="footer-bottom-squeeze">
+            <div class="pull-left footer-16">
+                <h4>Amazon Music</h4>
+                <ul>
+                    <li> <a href="#">Stream millions of songs</a></li>
+                </ul>
+                <h4>Amazon Web Services</h4>
+                <ul>
+                    <li> <a href="#">Scalable Cloud Computing Services<a></li>
+                </ul>
+                <h4>East Dane</h4>
+                <ul>
+                    <li> <a href="#">Designer Men's Fashion</a></li>
+                </ul>
+                <h4>Prime Now</h4>
+                <ul>
+                    <li> <a href="#">FREE 2-hour Delivery on Everyday Items</a></li>
+                </ul>
+                <h4>Woot!</h4>
+                <ul>
+                    <li> <a href="#">Deals and Shenanigans</a></li>
+                </ul>
+                <h4>Amazon Music</h4>
+                <ul>
+                    <li> <a href="#">Stream millions of songs</a></li>
+                </ul>
+            </div>
+            <div class="pull-left footer-16">
+                <h4>Amazon Advertising</h4>
+                <ul>
+                    <li> <a href="#">Find, attract, and engage customers</a></li>
+                </ul>
+                <h4>AmazonFresh</h4>
+                <ul>
+                    <li> <a href="#">Groceries & More Right To Your Door<a></li>
+                </ul>
+                <h4>Audible</h4>
+                <ul>
+                    <li> <a href="#">Downlaod Audiobooks</a></li>
+                </ul>
+                <h4>Prime Now</h4>
+                <ul>
+                    <li> <a href="#">FREE 2-hour Delivery on Everyday Items</a></li>
+                </ul>
+                <h4>Woot!</h4>
+                <ul>
+                    <li> <a href="#">Deals and Shenanigans</a></li>
+                </ul>
+                <h4>Amazon Music</h4>
+                <ul>
+                    <li> <a href="#">Stream millions of songs</a></li>
+                </ul>
+            </div>
+            <div class="pull-left footer-14">
+                <h4>Amazon Music</h4>
+                <ul>
+                    <li> <a href="#">Stream millions of songs</a></li>
+                </ul>
+                <h4>Amazon Web Services</h4>
+                <ul>
+                    <li> <a href="#">Scalable Cloud Computing Services<a></li>
+                </ul>
+                <h4>East Dane</h4>
+                <ul>
+                    <li> <a href="#">Designer Men's Fashion</a></li>
+                </ul>
+                <h4>Prime Now</h4>
+                <ul>
+                    <li> <a href="#">FREE 2-hour Delivery on Everyday Items</a></li>
+                </ul>
+                <h4>Woot!</h4>
+                <ul>
+                    <li> <a href="#">Deals and Shenanigans</a></li>
+                </ul>
+                <h4>Amazon Music</h4>
+                <ul>
+                    <li> <a href="#">Stream millions of songs</a></li>
+                </ul>
+            </div>
+            <div class="pull-left footer-16">
+                <h4>Amazon Music</h4>
+                <ul>
+                    <li> <a href="#">Stream millions of songs</a></li>
+                </ul>
+                <h4>Amazon Web Services</h4>
+                <ul>
+                    <li> <a href="#">Scalable Cloud Computing Services<a></li>
+                </ul>
+                <h4>East Dane</h4>
+                <ul>
+                    <li> <a href="#">Designer Men's Fashion</a></li>
+                </ul>
+                <h4>Prime Now</h4>
+                <ul>
+                    <li> <a href="#">FREE 2-hour Delivery on Everyday Items</a></li>
+                </ul>
+                <h4>Woot!</h4>
+                <ul>
+                    <li> <a href="#">Deals and Shenanigans</a></li>
+                </ul>
+                <h4>Amazon Music</h4>
+                <ul>
+                    <li> <a href="#">Stream millions of songs</a></li>
+                </ul>
+            </div>
+            <div class="pull-left footer-16">
+                <h4>Amazon Music</h4>
+                <ul>
+                    <li> <a href="#">Stream millions of songs</a></li>
+                </ul>
+                <h4>Amazon Web Services</h4>
+                <ul>
+                    <li> <a href="#">Scalable Cloud Computing Services<a></li>
+                </ul>
+                <h4>East Dane</h4>
+                <ul>
+                    <li> <a href="#">Designer Men's Fashion</a></li>
+                </ul>
+                <h4>Prime Now</h4>
+                <ul>
+                    <li> <a href="#">FREE 2-hour Delivery on Everyday Items</a></li>
+                </ul>
+                <h4>Woot!</h4>
+                <ul>
+                    <li> <a href="#">Deals and Shenanigans</a></li>
+                </ul>
+                <h4>Amazon Music</h4>
+                <ul>
+                    <li> <a href="#">Stream millions of songs</a></li>
+                </ul>
+            </div>
+            <div class="pull-left footer-16">
+                <h4>Amazon Music</h4>
+                <ul>
+                    <li> <a href="#">Stream millions of songs</a></li>
+                </ul>
+                <h4>Amazon Web Services</h4>
+                <ul>
+                    <li> <a href="#">Scalable Cloud Computing Services<a></li>
+                </ul>
+                <h4>East Dane</h4>
+                <ul>
+                    <li> <a href="#">Designer Men's Fashion</a></li>
+                </ul>
+                <h4>Prime Now</h4>
+                <ul>
+                    <li> <a href="#">FREE 2-hour Delivery on Everyday Items</a></li>
+                </ul>
+                <h4>Woot!</h4>
+                <ul>
+                    <li> <a href="#">Deals and Shenanigans</a></li>
+                </ul>
+                <h4>Amazon Music</h4>
+                <ul>
+                    <li> <a href="#">Stream millions of songs</a></li>
+                </ul>
+            </div>
+            <div class="pull-left footer-16">
+                <h4>Amazon Music</h4>
+                <ul>
+                    <li> <a href="#">Stream millions of songs</a></li>
+                </ul>
+                <h4>Amazon Web Services</h4>
+                <ul>
+                    <li> <a href="#">Scalable Cloud Computing Services<a></li>
+                </ul>
+                <h4>East Dane</h4>
+                <ul>
+                    <li> <a href="#">Designer Men's Fashion</a></li>
+                </ul>
+                <h4>Prime Now</h4>
+                <ul>
+                    <li> <a href="#">FREE 2-hour Delivery on Everyday Items</a></li>
+                </ul>
+                <h4>Woot!</h4>
+                <ul>
+                    <li> <a href="#">Deals and Shenanigans</a></li>
+                </ul>
+                <h4>Amazon Music</h4>
+                <ul>
+                    <li> <a href="#">Stream millions of songs</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 
 </body>
