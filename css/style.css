@@ -37,7 +37,7 @@ h4 {
     background-color: blue;
     height: 30px;
     background-image: url('../img/sm_topbar.png');
-    background-size: contain;
+    background-size: cover;
 }
 
 .top-nav {
